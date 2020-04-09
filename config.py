@@ -36,7 +36,7 @@ label_dict = get_dict()
 reverse_label_dict = dict((v,k) for k,v in label_dict.items())
 
 # gpu lists
-gpus = [6, 7, 8, 9]
+gpus = [0, 1, 2]
 
 num_gpus = len(gpus)
 num_classes = len(label_dict)
@@ -51,10 +51,10 @@ wemb_size = 256
 lstm_size = 512
 
 # minimum cropped image size for data augment
-crop_min_size = 224
+crop_min_size = 256
 
 # input image size
-image_size = 256
+image_size = 299
 
 # max random image offset for data augment
 offset = 16
@@ -67,10 +67,10 @@ TRAIN_SHORT_EDGE_SIZE = 8
 MAX_SIZE = image_size - 32
 
 # training batch size
-batch_size = 10 #12
+batch_size = 32     #12
 
 # steps per training epoch in tensorpack
-steps_per_epoch = 500
+steps_per_epoch = 4132
 
 # max epochs 
 num_epochs = 1000

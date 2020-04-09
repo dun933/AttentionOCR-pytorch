@@ -24,7 +24,7 @@ dataset_name = 'icdar_datasets.npy'
 # pb_path = './checkpoint/text_recognition_5435.pb'
 
 # restore training parameters
-restore_path = ''
+restore_path = 'checkpoints'
 starting_epoch = 1
 
 # checkpoint_path = './checkpoint/model-10000'
